@@ -49,7 +49,9 @@
                 <artifactId>akka-cluster_${ets.scala.compat.version}</artifactId>
                 <version>${ets.akka.version}</version>
             </dependency>
-            <!-- Implicitly pulled some akka-cluster, explicitly mentioned here
+
+            <!-- Akka-Remote:
+                 Implicitly pulled some akka-cluster, explicitly mentioned here
                  for dependency exclusion of the unnecessary transports
 
                  Because of many classpath conflicts with netty we avoid netty
@@ -67,6 +69,12 @@
                         <artifactId>netty</artifactId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>com.typesafe.akka</groupId>
+                <artifactId>akka-protobuf_${ets.scala.compat.version}</artifactId>
+                <version>${ets.akka.version}</version>
             </dependency>
 
             <dependency>
@@ -153,6 +161,14 @@
                 <groupId>de.kaufhof.ess.itgr.gts</groupId>
                 <artifactId>pillar_${ets.scala.compat.version}</artifactId>
                 <version>${ets.pillar.version}</version>
+            </dependency>
+
+            <!-- Required at least by the cassandra driver and scala logging, SLF4j is a good logging facade
+                 and should be used if you don't use scala-logging directly -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${ets.slf4j-api.version}</version>
             </dependency>
 
             <!-- other utils stuff -->
