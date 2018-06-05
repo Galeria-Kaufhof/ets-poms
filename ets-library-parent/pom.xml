@@ -13,4 +13,12 @@
     <!-- Currently there is nothing specific here, but if we get special requirements for libraries 
          for packaging / publishing they will be added here -->
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>net.alchim31.maven</groupId>
+                <artifactId>scala-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>

@@ -47,7 +47,7 @@
         <!-- TODO add changelog -->
         <ets.scalatest.mavenplugin.version>1.0</ets.scalatest.mavenplugin.version>
         <!-- https://davidb.github.io/scala-maven-plugin/changes-report.html -->
-        <ets.scala.mavenplugin.version>3.3.0</ets.scala.mavenplugin.version>
+        <ets.scala.mavenplugin.version>3.3.2</ets.scala.mavenplugin.version>
         <!-- TODO better changelog url? -->
         <!-- https://akka.io/blog/news/2017/04/13/akka-2.5.0-released -->
         <ets.akka.version>2.5.3</ets.akka.version>
@@ -75,6 +75,10 @@
         <!-- Other project properties -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <ets.scala.compat.version>2.12</ets.scala.compat.version>
+
+        <!-- ETS libraries -->
+        <ets.akka-stream-utils-core.version>0.1-SNAPSHOT</ets.akka-stream-utils-core.version>
+        <ets.filestorage.version>0.1-SNAPSHOT</ets.filestorage.version>
 
     </properties>
 

@@ -178,6 +178,21 @@
                 <version>1.0</version>
             </dependency>
 
+
+            <!-- ETS Dependencies -->
+
+            <dependency>
+                <groupId>de.kaufhof.ets</groupId>
+                <artifactId>ets-filestorage-core</artifactId>
+                <version>${ets.filestorage.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>de.kaufhof.ets</groupId>
+                <artifactId>ets-akka-stream-utils-core</artifactId>
+                <version>${ets.akka-stream-utils-core.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
