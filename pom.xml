@@ -77,6 +77,8 @@
         <ets.maven.javadoc.plugin.version>2.10.4</ets.maven.javadoc.plugin.version>
         <ets.maven.deploy.plugin.version>2.8.2</ets.maven.deploy.plugin.version>
         <ets.maven.gpg.plugin.version>1.6</ets.maven.gpg.plugin.version>
+        <ets.maven.archetype.plugin.version>3.0.1</ets.maven.archetype.plugin.version>
+        <ets.maven.resource.plugin.version>3.0.2</ets.maven.resource.plugin.version>
 
         <!-- Other project properties -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -88,6 +90,7 @@
     </properties>
 
     <modules>
+        <module>ets-archetype-parent</module>
         <module>ets-module-parent</module>
         <module>ets-dependencies</module>
         <module>ets-build-parent</module>

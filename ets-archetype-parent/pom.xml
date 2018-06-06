@@ -7,9 +7,20 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ets-build-parent</artifactId>
+    <artifactId>ets-archetype-parent</artifactId>
     <packaging>pom</packaging>
 
-    <name>EShop Technology Stack (ETS) - Build Parent POM</name>
+    <name>EShop Technology Stack (ETS) - Archetype Parent POM</name>
+
+    <build>
+        <!-- https://maven.apache.org/archetype/archetype-packaging/ -->
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.archetype</groupId>
+                <artifactId>archetype-packaging</artifactId>
+                <version>${ets.maven.archetype.plugin.version}</version>
+            </extension>
+        </extensions>
+    </build>
 
 </project>
