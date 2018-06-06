@@ -44,7 +44,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>${ets.maven.surefireplugin.version}</version>
+                    <version>${ets.maven.surefire.plugin.version}</version>
                     <configuration>
                         <skipTests>true</skipTests>
                     </configuration>
@@ -52,7 +52,7 @@
 
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>${ets.maven.compilerplugin.version}</version>
+                    <version>${ets.maven.compiler.plugin.version}</version>
                     <configuration>
                         <source>${ets.java.version}</source>
                         <target>${ets.java.version}</target>
@@ -96,7 +96,7 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>exec-maven-plugin</artifactId>
-                    <version>${ets.maven.execplugin.version}</version>
+                    <version>${ets.maven.exec.plugin.version}</version>
                 </plugin>
 
             </plugins>

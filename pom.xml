@@ -68,9 +68,15 @@
         <ets.slf4j-api.version>1.7.25</ets.slf4j-api.version>
 
         <!-- Plugin versions -->
-        <ets.maven.execplugin.version>1.6.0</ets.maven.execplugin.version>
-        <ets.maven.surefireplugin.version>2.12.4</ets.maven.surefireplugin.version>
-        <ets.maven.compilerplugin.version>3.1</ets.maven.compilerplugin.version>
+        <ets.maven.exec.plugin.version>1.6.0</ets.maven.exec.plugin.version>
+        <ets.maven.surefire.plugin.version>2.12.4</ets.maven.surefire.plugin.version>
+        <ets.maven.compiler.plugin.version>3.1</ets.maven.compiler.plugin.version>
+        <ets.nexus.staging.maven.plugin.version>1.6.7</ets.nexus.staging.maven.plugin.version>
+        <ets.maven.release.plugin.version>2.5.3</ets.maven.release.plugin.version>
+        <ets.maven.source.plugin.version>3.0.1</ets.maven.source.plugin.version>
+        <ets.maven.javadoc.plugin.version>2.10.4</ets.maven.javadoc.plugin.version>
+        <ets.maven.deploy.plugin.version>2.8.2</ets.maven.deploy.plugin.version>
+        <ets.maven.gpg.plugin.version>1.6</ets.maven.gpg.plugin.version>
 
         <!-- Other project properties -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -79,12 +85,12 @@
         <!-- ETS libraries -->
         <ets.akka-stream-utils-core.version>0.1-SNAPSHOT</ets.akka-stream-utils-core.version>
         <ets.filestorage.version>0.1-SNAPSHOT</ets.filestorage.version>
-
     </properties>
 
     <modules>
         <module>ets-module-parent</module>
         <module>ets-dependencies</module>
+        <module>ets-build-parent</module>
         <module>ets-library-parent</module>
         <module>ets-service-parent</module>
     </modules>
