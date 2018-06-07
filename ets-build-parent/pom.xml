@@ -6,19 +6,10 @@
         <relativePath>../ets-module-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>ets-library-parent</artifactId>
+
+    <artifactId>ets-build-parent</artifactId>
     <packaging>pom</packaging>
-    <name>EShop Technology Stack (ETS) - Library Parent POM</name>
 
-    <!-- Currently there is nothing specific here, but if we get special requirements for libraries 
-         for packaging / publishing they will be added here -->
+    <name>EShop Technology Stack (ETS) - Build Parent POM</name>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>net.alchim31.maven</groupId>
-                <artifactId>scala-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 </project>
