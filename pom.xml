@@ -65,7 +65,24 @@
         <!-- https://github.com/lightbend/config/blob/master/NEWS.md -->
         <ets.typesafe.config.version>1.3.3</ets.typesafe.config.version>
         <!-- https://www.slf4j.org/news.html -->
-        <ets.slf4j-api.version>1.7.25</ets.slf4j-api.version>
+        <ets.slf4j.version>1.7.25</ets.slf4j.version>
+        <!-- https://github.com/FasterXML/jackson/wiki/Jackson-Releases -->
+        <!-- https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.9.5 -->
+        <ets.fasterxml.jackson.version>2.9.5</ets.fasterxml.jackson.version>
+        <!-- https://archive.apache.org/dist/httpcomponents/httpcore/RELEASE_NOTES.txt -->
+        <ets.httpcomponents.httpcore.version>4.4.9</ets.httpcomponents.httpcore.version>
+        <!-- https://www.apache.org/dist/httpcomponents/httpasyncclient/RELEASE_NOTES-4.1.x.txt -->
+        <ets.httpcomponents.httpasyncclient.version>4.1.3</ets.httpcomponents.httpasyncclient.version>
+        <!-- https://archive.apache.org/dist/httpcomponents/httpclient/RELEASE_NOTES-4.5.x.txt -->
+        <ets.httpcomponents.httpclient.version>4.5.5</ets.httpcomponents.httpclient.version>
+        <!-- http://www.joda.org/joda-time/changes-report.html#a2.10 -->
+        <ets.joda-time.version>2.10</ets.joda-time.version>
+        <!-- https://github.com/playframework/play-json/releases -->
+        <ets.playframework.json.version>2.6.9</ets.playframework.json.version>
+        <!-- https://www.elastic.co/guide/en/elasticsearch/reference/current/release-notes-6.2.4.html -->
+        <ets.elasticsearch.restclient.version>6.2.4</ets.elasticsearch.restclient.version>
+        <!-- https://commons.apache.org/proper/commons-codec/changes-report.html -->
+        <ets.commons.codec.version>1.11</ets.commons.codec.version>
 
         <!-- Plugin versions -->
         <ets.maven.exec.plugin.version>1.6.0</ets.maven.exec.plugin.version>
@@ -79,6 +96,7 @@
         <ets.maven.gpg.plugin.version>1.6</ets.maven.gpg.plugin.version>
         <ets.maven.archetype.plugin.version>3.0.1</ets.maven.archetype.plugin.version>
         <ets.maven.resource.plugin.version>3.0.2</ets.maven.resource.plugin.version>
+        <ets.maven.enforcer.plugin.version>3.0.0-M1</ets.maven.enforcer.plugin.version>
 
         <!-- Other project properties -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

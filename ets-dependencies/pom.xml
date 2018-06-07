@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
         <groupId>de.kaufhof.ets</groupId>
         <artifactId>ets-root</artifactId>
@@ -168,19 +169,107 @@
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
-                <version>${ets.slf4j-api.version}</version>
+                <version>${ets.slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>jul-to-slf4j</artifactId>
+                <version>${ets.slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>jcl-over-slf4j</artifactId>
+                <version>${ets.slf4j.version}</version>
+            </dependency>
+
+            <!-- Jackson -->
+            <!-- Jackson json is used by many libs, therefore it's a first class citizen. We prefer
+            the current version (fasterxml). Some libraries depend on the 1.x version (codehaus namespace)
+            but we try to avoid the 1.x version.
+            -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${ets.fasterxml.jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${ets.fasterxml.jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${ets.fasterxml.jackson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-jdk8</artifactId>
+                <version>${ets.fasterxml.jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-jsr310</artifactId>
+                <version>${ets.fasterxml.jackson.version}</version>
+            </dependency>
+
+
+            <!-- http components -->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${ets.httpcomponents.httpclient.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpcore</artifactId>
+                <version>${ets.httpcomponents.httpcore.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpasyncclient</artifactId>
+                <version>${ets.httpcomponents.httpasyncclient.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpcore-nio</artifactId>
+                <version>${ets.httpcomponents.httpcore.version}</version>
+            </dependency>
+
+            <!-- play json stuff -->
+            <dependency>
+                <groupId>com.typesafe.play</groupId>
+                <artifactId>play-json_${ets.scala.compat.version}</artifactId>
+                <version>${ets.playframework.json.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.typesafe.play</groupId>
+                <artifactId>play-functional_${ets.scala.compat.version}</artifactId>
+                <version>${ets.playframework.json.version}</version>
             </dependency>
 
             <!-- other utils stuff -->
             <dependency>
-                <groupId>net.jalg</groupId>
-                <artifactId>jiron</artifactId>
-                <version>1.0</version>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>${ets.joda-time.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.elasticsearch.client</groupId>
+                <artifactId>elasticsearch-rest-client</artifactId>
+                <version>${ets.elasticsearch.restclient.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>${ets.commons.codec.version}</version>
+            </dependency>
 
             <!-- ETS Dependencies -->
-
+            <!-- May contain not (yet) published libraries -->
             <dependency>
                 <groupId>de.kaufhof.ets</groupId>
                 <artifactId>ets-filestorage-core</artifactId>

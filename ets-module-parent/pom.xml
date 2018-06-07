@@ -15,7 +15,7 @@
             <dependency>
                 <groupId>de.kaufhof.ets</groupId>
                 <artifactId>ets-dependencies</artifactId>
-                <version>0.1-SNAPSHOT</version>
+                <version>0.1.0-SNAPSHOT</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -23,7 +23,38 @@
     </dependencyManagement>
 
     <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>${ets.maven.enforcer.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>enforce-banned-dependencies</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <bannedDependencies>
+                                    <!-- we always use SLF4J and logback but we don't want to exclude
+                                    commons-logging in our dependency declaration because then we would provide
+                                    and artifact which is broken if you reference it directly (missing dependency,
+                                    you may not know that you need the SLF4J bridge there.
 
+                                    Use the org.slf4j:jcl-over-slf4j bridge after removing commons-logging-->
+
+                                    <excludes>
+                                        <exclude>commons-logging:commons-logging</exclude>
+                                    </excludes>
+                                </bannedDependencies>
+                            </rules>
+                            <fail>true</fail>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
         <pluginManagement>
             <plugins>
                 <plugin>
