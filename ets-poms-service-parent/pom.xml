@@ -9,4 +9,25 @@
     <artifactId>ets-poms-service-parent</artifactId>
     <packaging>pom</packaging>
     <name>EShop Technology Stack (ETS) - Service Parent POM</name>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>net.alchim31.maven</groupId>
+                <artifactId>scala-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.scalatest</groupId>
+                <artifactId>scalatest-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.scalatest</groupId>
+            <artifactId>scalatest_${ets.scala.compat.version}</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>
