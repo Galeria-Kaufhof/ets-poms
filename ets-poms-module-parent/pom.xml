@@ -119,6 +119,8 @@
                         <args>
                             <arg>-feature</arg>
                             <arg>-deprecation</arg>
+                            <arg>-language:implicitConversions</arg>
+                            <arg>-language:postfixOps</arg>
                         </args>
                         <recompileMode>incremental</recompileMode>
                     </configuration>
