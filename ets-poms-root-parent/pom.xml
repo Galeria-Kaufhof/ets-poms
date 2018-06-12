@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.kaufhof.ets</groupId>
+    <artifactId>ets-poms-root-parent</artifactId>
+    <packaging>pom</packaging>
+
+    <version>0.1.0-SNAPSHOT</version>
+    <name>EShop Technology Stack (ETS) - Root Parent POM</name>
+
+
+    <!--    Transitive dependencies in the compile scope
+            | Name of the Lib                       | Lib Version   | Pulled in by
+            | netty                                 | 4.0.56.Final  | cassandra-driver-core:3.5.0
+            | guava                                 | 19            | cassandra-driver-core:3.5.0
+            | dropwizard.metrics-core               |
+            | com.github.jnr:jnr-ffi                | 2.1.7         | cassandra-driver-core:3.5.0
+            | org.reactivestreams:reactive-streams  | 1.0.0         | akka-stream:2.5.3
+            | typesafe:ssl-config-core_2.12         | 0.2.1         | akka-stream:2.5.3
+            | io.aeron:aeron-driver                 | 1.2.5         | akka-remote:2.5.3
+            | io.aeron:aeron-client                 | 1.2.5         | akka-remote:2.5.3
+            | org.agrona:agrona                     | 0.9.5         | aeron-client:1.2.5
+            | scala-lang:scala-java8-compat         | 0.8.0         | akka-actor:2.5.3
+            | org.slf4j:slf4j-api                   | 1.7.25        | logback-classic:1.2.3, scala-logging:3.9.0
+            | fasterxml:jackson-databind:jar        | 2.8.9         | logstash-logback-encoder:4.11
+            | fasterxml:jackson-annotations:jar     | 2.8.0         | jackson-databind:2.8.9
+            | fasterxml:jackson-core:jar            | 2.8.9         | jackson-databind:2.8.9
+
+    -->
+
+
+    <properties>
+
+        <!--
+            Dependency versions:
+            When adding library dependency versions, please provide a change log url.
+            A change log / proper documentation is mandatory for all modules managed
+            by the ETS dependency management!
+        -->
+
+        <!-- https://www.scala-lang.org/download/changelog.html -->
+        <ets.scala.version>2.12.6</ets.scala.version>
+        <!-- http://www.oracle.com/technetwork/java/javase/8u-relnotes-2225394.html (lol) -->
+        <ets.java.version>1.8</ets.java.version>
+        <!-- https://docs.datastax.com/en/developer/java-driver/latest/changelog/ -->
+        <ets.cassandra.driver.version>3.5.0</ets.cassandra.driver.version>
+        <!-- http://www.scalatest.org/release_notes -->
+        <ets.scalatest.version>3.0.3</ets.scalatest.version>
+        <!-- TODO add changelog -->
+        <ets.scalatest.mavenplugin.version>1.0</ets.scalatest.mavenplugin.version>
+        <!-- https://davidb.github.io/scala-maven-plugin/changes-report.html -->
+        <ets.scala.mavenplugin.version>3.3.2</ets.scala.mavenplugin.version>
+        <!-- TODO better changelog url? -->
+        <!-- https://akka.io/blog/news/2017/04/13/akka-2.5.0-released -->
+        <ets.akka.version>2.5.3</ets.akka.version>
+        <!-- https://doc.akka.io/docs/akka-http/current/release-notes/ -->
+        <ets.akka.http.version>10.1.1</ets.akka.http.version>
+        <!-- TODO does a better changelog exist? -->
+        <!-- https://github.com/lightbend/scala-logging -->
+        <ets.typesafe.scala-logging.version>3.9.0</ets.typesafe.scala-logging.version>
+        <!-- FIXME missing change log -->
+        <ets.pillar.version>1.0</ets.pillar.version>
+        <!-- https://logback.qos.ch/news.html -->
+        <ets.logback.version>1.2.3</ets.logback.version>
+        <!-- https://github.com/logstash/logstash-logback-encoder/releases -->
+        <ets.logstash.logback.encoder.version>4.11</ets.logstash.logback.encoder.version>
+        <!-- https://github.com/lightbend/config/blob/master/NEWS.md -->
+        <ets.typesafe.config.version>1.3.3</ets.typesafe.config.version>
+        <!-- https://www.slf4j.org/news.html -->
+        <ets.slf4j.version>1.7.25</ets.slf4j.version>
+        <!-- https://github.com/FasterXML/jackson/wiki/Jackson-Releases -->
+        <!-- https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.9.5 -->
+        <ets.fasterxml.jackson.version>2.9.5</ets.fasterxml.jackson.version>
+        <!-- https://archive.apache.org/dist/httpcomponents/httpcore/RELEASE_NOTES.txt -->
+        <ets.httpcomponents.httpcore.version>4.4.9</ets.httpcomponents.httpcore.version>
+        <!-- https://www.apache.org/dist/httpcomponents/httpasyncclient/RELEASE_NOTES-4.1.x.txt -->
+        <ets.httpcomponents.httpasyncclient.version>4.1.3</ets.httpcomponents.httpasyncclient.version>
+        <!-- https://archive.apache.org/dist/httpcomponents/httpclient/RELEASE_NOTES-4.5.x.txt -->
+        <ets.httpcomponents.httpclient.version>4.5.5</ets.httpcomponents.httpclient.version>
+        <!-- http://www.joda.org/joda-time/changes-report.html#a2.10 -->
+        <ets.joda-time.version>2.10</ets.joda-time.version>
+        <!-- https://github.com/playframework/play-json/releases -->
+        <ets.playframework.json.version>2.6.9</ets.playframework.json.version>
+        <!-- https://www.elastic.co/guide/en/elasticsearch/reference/current/release-notes-6.2.4.html -->
+        <ets.elasticsearch.restclient.version>6.2.4</ets.elasticsearch.restclient.version>
+        <!-- https://commons.apache.org/proper/commons-codec/changes-report.html -->
+        <ets.commons.codec.version>1.11</ets.commons.codec.version>
+
+        <!-- Plugin versions -->
+        <ets.maven.exec.plugin.version>1.6.0</ets.maven.exec.plugin.version>
+        <ets.maven.surefire.plugin.version>2.12.4</ets.maven.surefire.plugin.version>
+        <ets.maven.compiler.plugin.version>3.1</ets.maven.compiler.plugin.version>
+        <ets.nexus.staging.maven.plugin.version>1.6.7</ets.nexus.staging.maven.plugin.version>
+        <ets.maven.release.plugin.version>2.5.3</ets.maven.release.plugin.version>
+        <ets.maven.source.plugin.version>3.0.1</ets.maven.source.plugin.version>
+        <ets.maven.javadoc.plugin.version>2.10.4</ets.maven.javadoc.plugin.version>
+        <ets.maven.deploy.plugin.version>2.8.2</ets.maven.deploy.plugin.version>
+        <ets.maven.gpg.plugin.version>1.6</ets.maven.gpg.plugin.version>
+        <ets.maven.archetype.plugin.version>3.0.1</ets.maven.archetype.plugin.version>
+        <ets.maven.resource.plugin.version>3.0.2</ets.maven.resource.plugin.version>
+        <ets.maven.enforcer.plugin.version>3.0.0-M1</ets.maven.enforcer.plugin.version>
+        <ets.maven.projectinforeports.plugin.version>2.9</ets.maven.projectinforeports.plugin.version>
+
+        <!-- Other project properties -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <ets.scala.compat.version>2.12</ets.scala.compat.version>
+
+        <!-- ETS libraries -->
+        <ets.akka-stream-utils-core.version>0.1-SNAPSHOT</ets.akka-stream-utils-core.version>
+        <ets.filestorage.version>0.1-SNAPSHOT</ets.filestorage.version>
+    </properties>
+</project>
