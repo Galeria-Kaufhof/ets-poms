@@ -3,16 +3,16 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.kaufhof.ets</groupId>
-    <artifactId>ets-poms-build</artifactId>
+    <artifactId>ets-poms-aggregator</artifactId>
     <packaging>pom</packaging>
 
-    <description>This is the build POM for the ets-poms project. It only contains the information for releasing this
-        poms. It is NOT the parent of other poms because it must not inherit things like scm urls and distribution
-        management settings
+    <description>
+      Aggregator POM only, don't add anything except the license / dev infos + the modules here. Aggregator POMs are not parents
+      of any poms - so nothing will be inherited from this POM.
     </description>
 
     <version>0.1.0-SNAPSHOT</version>
-    <name>EShop Technology Stack (ETS) - Build POM</name>
+    <name>EShop Technology Stack (ETS) - Aggregator POM</name>
 
     <licenses>
         <license>
@@ -29,24 +29,6 @@
             <url>https://github.com/Galeria-Kaufhof</url>
         </developer>
     </developers>
-
-    <scm>
-        <url>https://github.com/Galeria-Kaufhof/ets-poms</url>
-        <connection>scm:git:git@github.com:Galeria-Kaufhof/ets-poms.git</connection>
-        <developerConnection>scm:git:git@github.com:Galeria-Kaufhof/ets-poms.git</developerConnection>
-        <tag>HEAD</tag>
-    </scm>
-
-    <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-    </distributionManagement>
 
     <modules>
         <module>ets-poms-archetype-parent</module>
