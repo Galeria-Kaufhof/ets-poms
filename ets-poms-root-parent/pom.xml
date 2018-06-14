@@ -7,7 +7,7 @@
     <artifactId>ets-poms-root-parent</artifactId>
     <packaging>pom</packaging>
 
-    <version>0.1.0</version>
+    <version>0.2.0-SNAPSHOT</version>
     <name>EShop Technology Stack (ETS) - Root Parent POM</name>
     <description>The ETS Poms are the parent POMs for all libraries / services maintained in the ETS scope. They define
     library versions, plugin configurations and activations.</description>
@@ -137,7 +137,7 @@
         <url>https://github.com/Galeria-Kaufhof/ets-poms</url>
         <connection>scm:git:git@github.com:Galeria-Kaufhof/ets-poms.git</connection>
         <developerConnection>scm:git:git@github.com:Galeria-Kaufhof/ets-poms.git</developerConnection>
-        <tag>v0.1.0</tag>
+        <tag>HEAD</tag>
     </scm>
 
 </project>
