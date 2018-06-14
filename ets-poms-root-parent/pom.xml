@@ -113,4 +113,30 @@
         <ets.akka-stream-utils-core.version>0.1-SNAPSHOT</ets.akka-stream-utils-core.version>
         <ets.filestorage.version>0.1-SNAPSHOT</ets.filestorage.version>
     </properties>
+
+
+    <!-- License, developers and scm configuration are mandatory for all artifacts published on maven central -->
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>galeria-kaufhof</id>
+            <name>Galeria Kaufhof</name>
+            <url>https://github.com/Galeria-Kaufhof</url>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>https://github.com/fbe/ets-poms</url>
+        <connection>scm:git:git@github.com:fbe/ets-poms.git</connection>
+        <developerConnection>scm:git:git@github.com:fbe/ets-poms.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
 </project>

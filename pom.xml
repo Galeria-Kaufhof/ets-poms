@@ -1,34 +1,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
+    <parent>
+        <groupId>de.kaufhof.ets</groupId>
+        <artifactId>ets-poms-aggregator-parent</artifactId>
+        <version>0.1.0-SNAPSHOT</version>
+        <relativePath>ets-poms-aggregator-parent/</relativePath>
+    </parent>
+
     <modelVersion>4.0.0</modelVersion>
-    <groupId>de.kaufhof.ets</groupId>
     <artifactId>ets-poms-aggregator</artifactId>
     <packaging>pom</packaging>
 
     <description>
-      Aggregator POM only, don't add anything except the license / dev infos + the modules here. Aggregator POMs are not parents
-      of any poms - so nothing will be inherited from this POM.
+        Aggregator POM only, used for releasing and comfortable building.
     </description>
 
-    <version>0.1.0-SNAPSHOT</version>
     <name>EShop Technology Stack (ETS) - Aggregator POM</name>
-
-    <licenses>
-        <license>
-            <name>MIT License</name>
-            <url>https://opensource.org/licenses/MIT</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
-
-    <developers>
-        <developer>
-            <id>galeria-kaufhof</id>
-            <name>Galeria Kaufhof</name>
-            <url>https://github.com/Galeria-Kaufhof</url>
-        </developer>
-    </developers>
 
     <modules>
         <module>ets-poms-archetype-parent</module>
@@ -37,6 +25,7 @@
         <module>ets-poms-library-parent</module>
         <module>ets-poms-service-parent</module>
         <module>ets-poms-root-parent</module>
+        <module>ets-poms-aggregator-parent</module>
     </modules>
 
 </project>
