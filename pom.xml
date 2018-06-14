@@ -2,20 +2,20 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <parent>
-      <groupId>de.kaufhof.ets</groupId>
-      <artifactId>ets-poms-aggregator-parent</artifactId>
-      <version>0.1.0-SNAPSHOT</version>
-      <relativePath>ets-poms-aggregator-parent/aggregator-parent/</relativePath>
+        <groupId>de.kaufhof.ets</groupId>
+        <artifactId>ets-poms-aggregator-parent</artifactId>
+        <version>0.1.0-SNAPSHOT</version>
+        <relativePath>ets-poms-aggregator-parent/</relativePath>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>de.kaufhof.ets</groupId>
     <artifactId>ets-poms-aggregator</artifactId>
     <packaging>pom</packaging>
 
     <description>
-      Aggregator POM only, don't add anything except the license / dev infos + the modules here. Aggregator POMs are not parents
-      of any poms - so nothing will be inherited from this POM.
+        Aggregator POM only, don't add anything except the license / dev infos + the modules here. Aggregator POMs are
+        not parents
+        of any poms - so nothing will be inherited from this POM.
     </description>
 
     <name>EShop Technology Stack (ETS) - Aggregator POM</name>
