@@ -13,28 +13,10 @@
     <packaging>pom</packaging>
 
     <description>
-        Aggregator POM only, don't add anything except the license / dev infos + the modules here. Aggregator POMs are
-        not parents
-        of any poms - so nothing will be inherited from this POM.
+        Aggregator POM only, used for releasing and comfortable building.
     </description>
 
     <name>EShop Technology Stack (ETS) - Aggregator POM</name>
-
-    <licenses>
-        <license>
-            <name>MIT License</name>
-            <url>https://opensource.org/licenses/MIT</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
-
-    <developers>
-        <developer>
-            <id>galeria-kaufhof</id>
-            <name>Galeria Kaufhof</name>
-            <url>https://github.com/Galeria-Kaufhof</url>
-        </developer>
-    </developers>
 
     <modules>
         <module>ets-poms-archetype-parent</module>
