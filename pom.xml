@@ -18,6 +18,18 @@
 
     <name>EShop Technology Stack (ETS) - Aggregator POM</name>
 
+
+    <!-- We need a SCM declaration in each file because of
+        https://issues.apache.org/jira/browse/MNG-3244
+        https://issues.apache.org/jira/browse/MNG-2290
+    -->
+    <scm>
+        <url>https://github.com/Galeria-Kaufhof/ets-poms</url>
+        <connection>scm:git:git@github.com:Galeria-Kaufhof/ets-poms.git</connection>
+        <developerConnection>scm:git:git@github.com:Galeria-Kaufhof/ets-poms.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
     <modules>
         <module>ets-poms-archetype-parent</module>
         <module>ets-poms-module-parent</module>
