@@ -1,6 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
+    <parent>
+      <groupId>de.kaufhof.ets</groupId>
+      <artifactId>ets-poms-aggregator-parent</artifactId>
+      <version>0.1.0-SNAPSHOT</version>
+      <relativePath>ets-poms-aggregator-parent/aggregator-parent/</relativePath>
+    </parent>
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.kaufhof.ets</groupId>
     <artifactId>ets-poms-aggregator</artifactId>
@@ -11,7 +18,6 @@
       of any poms - so nothing will be inherited from this POM.
     </description>
 
-    <version>0.1.0-SNAPSHOT</version>
     <name>EShop Technology Stack (ETS) - Aggregator POM</name>
 
     <licenses>
@@ -37,6 +43,7 @@
         <module>ets-poms-library-parent</module>
         <module>ets-poms-service-parent</module>
         <module>ets-poms-root-parent</module>
+        <module>ets-poms-aggregator-parent</module>
     </modules>
 
 </project>
