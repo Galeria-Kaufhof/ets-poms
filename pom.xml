@@ -32,7 +32,6 @@
     <modules>
         <module>ets-poms-archetype-parent</module>
         <module>ets-poms-module-parent</module>
-        <module>ets-poms-dependencies</module>
         <module>ets-poms-library-parent</module>
         <module>ets-poms-service-parent</module>
         <module>ets-poms-root-parent</module>
