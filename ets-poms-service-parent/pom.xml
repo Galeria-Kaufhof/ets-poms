@@ -2,7 +2,7 @@
     <parent>
         <groupId>de.kaufhof.ets</groupId>
         <artifactId>ets-poms-module-parent</artifactId>
-        <version>0.2.0-SNAPSHOT</version>
+        <version>0.2.0</version>
         <relativePath>../ets-poms-module-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -39,7 +39,7 @@
         <url>https://github.com/Galeria-Kaufhof/ets-poms</url>
         <connection>scm:git:git@github.com:Galeria-Kaufhof/ets-poms.git</connection>
         <developerConnection>scm:git:git@github.com:Galeria-Kaufhof/ets-poms.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>v0.2.0</tag>
     </scm>
 
 </project>
