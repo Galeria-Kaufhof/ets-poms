@@ -105,6 +105,7 @@
         <ets.maven.resource.plugin.version>3.0.2</ets.maven.resource.plugin.version>
         <ets.maven.enforcer.plugin.version>3.0.0-M1</ets.maven.enforcer.plugin.version>
         <ets.maven.projectinforeports.plugin.version>2.9</ets.maven.projectinforeports.plugin.version>
+        <ets.maven.gpg.plugin.version>1.6</ets.maven.gpg.plugin.version>
 
         <!-- Other project properties -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
