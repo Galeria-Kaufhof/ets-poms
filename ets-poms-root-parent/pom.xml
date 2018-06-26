@@ -54,7 +54,7 @@
         <!-- TODO add changelog -->
         <ets.scalatest.mavenplugin.version>1.0</ets.scalatest.mavenplugin.version>
         <!-- https://davidb.github.io/scala-maven-plugin/changes-report.html -->
-        <ets.scala.mavenplugin.version>3.3.2</ets.scala.mavenplugin.version>
+        <ets.scala.mavenplugin.version>3.4.1</ets.scala.mavenplugin.version>
         <!-- TODO better changelog url? -->
         <!-- https://akka.io/blog/news/2017/04/13/akka-2.5.0-released -->
         <ets.akka.version>2.5.3</ets.akka.version>
