@@ -82,6 +82,12 @@
                 <version>${ets.akka.http.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.typesafe.akka</groupId>
+                <artifactId>akka-http-spray-json_${ets.scala.compat.version}</artifactId>
+                <version>${ets.akka.http.version}</version>
+            </dependency>
+
             <!-- maintained in the akka-http git namespace -->
             <!-- explicitly declared because http and it's libraries are first class -->
             <dependency>
@@ -160,6 +166,12 @@
                 <groupId>de.kaufhof.ess.itgr.gts</groupId>
                 <artifactId>pillar_${ets.scala.compat.version}</artifactId>
                 <version>${ets.pillar.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.spray</groupId>
+                <artifactId>spray-json_${ets.scala.compat.version}</artifactId>
+                <version>${ets.spray.version}</version>
             </dependency>
 
             <!-- Required at least by the cassandra driver and scala logging, SLF4j is a good logging facade
