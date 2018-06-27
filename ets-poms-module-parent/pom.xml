@@ -92,14 +92,14 @@
             <!-- explicitly declared because http and it's libraries are first class -->
             <dependency>
                 <groupId>com.typesafe.akka</groupId>
-                <artifactId>akka-parsing_2.12</artifactId>
+                <artifactId>akka-parsing_${ets.scala.compat.version}</artifactId>
                 <version>${ets.akka.http.version}</version>
             </dependency>
 
             <!-- Transitive dependency of akka-stream -> typesafe-ssl-config, but first class citizen too -->
             <dependency>
                 <groupId>org.scala-lang.modules</groupId>
-                <artifactId>scala-parser-combinators_2.12</artifactId>
+                <artifactId>scala-parser-combinators_${ets.scala.compat.version}</artifactId>
                 <version>1.1.0</version><!-- TODO remove versions -->
             </dependency>
 
