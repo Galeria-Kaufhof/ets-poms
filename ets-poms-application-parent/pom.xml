@@ -6,9 +6,9 @@
         <relativePath>../ets-poms-module-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>ets-poms-service-parent</artifactId>
+    <artifactId>ets-poms-application-parent</artifactId>
     <packaging>pom</packaging>
-    <name>EShop Technology Stack (ETS) - Service Parent POM</name>
+    <name>EShop Technology Stack (ETS) - Application Parent POM</name>
 
     <build>
         <plugins>
