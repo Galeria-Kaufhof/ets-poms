@@ -2,7 +2,7 @@
     <parent>
         <groupId>de.kaufhof.ets</groupId>
         <artifactId>ets-poms-module-parent</artifactId>
-        <version>0.3.0-SNAPSHOT</version>
+        <version>0.3.0</version>
         <relativePath>../ets-poms-module-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
