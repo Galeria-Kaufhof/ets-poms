@@ -9,7 +9,7 @@
 
     <version>0.3.0-SNAPSHOT</version>
     <name>EShop Technology Stack (ETS) - Root Parent POM</name>
-    <description>The ETS Poms are the parent POMs for all libraries / services maintained in the ETS scope. They define
+    <description>The ETS Poms are the parent POMs for all libraries / applications maintained in the ETS scope. They define
     library versions, plugin configurations and activations.</description>
     <url>https://github.com/Galeria-Kaufhof</url>
 
