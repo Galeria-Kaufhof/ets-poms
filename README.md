@@ -6,7 +6,7 @@
 This project contains all POMs defining a ETS release.
 
 ## Changelog
-### next
+### 0.4.0
 - Add Maven assembly descriptor for application
 - Activate plugins and add dependencies depending on profiles
 ### 0.3.0
