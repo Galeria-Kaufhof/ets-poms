@@ -13,26 +13,6 @@
     <!-- Currently there is nothing specific here, but if we get special requirements for libraries 
          for packaging / publishing they will be added here -->
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>net.alchim31.maven</groupId>
-                <artifactId>scala-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.scalatest</groupId>
-                <artifactId>scalatest-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.scalatest</groupId>
-            <artifactId>scalatest_${ets.scala.compat.version}</artifactId>
-        </dependency>
-    </dependencies>
-
     <!-- We need a SCM declaration in each file because of
         https://issues.apache.org/jira/browse/MNG-3244
         https://issues.apache.org/jira/browse/MNG-2290

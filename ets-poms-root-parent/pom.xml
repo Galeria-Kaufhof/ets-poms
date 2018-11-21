@@ -107,6 +107,7 @@
         <ets.maven.resource.plugin.version>3.0.2</ets.maven.resource.plugin.version>
         <ets.maven.enforcer.plugin.version>3.0.0-M1</ets.maven.enforcer.plugin.version>
         <ets.maven.projectinforeports.plugin.version>2.9</ets.maven.projectinforeports.plugin.version>
+        <ets.maven.assembly.plugin.version>3.1.0</ets.maven.assembly.plugin.version>
 
         <!-- Other project properties -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -115,6 +116,7 @@
         <!-- ETS libraries -->
         <ets.akka-stream-utils-core.version>0.1-SNAPSHOT</ets.akka-stream-utils-core.version>
         <ets.filestorage.version>0.1-SNAPSHOT</ets.filestorage.version>
+        <ets.assembly.descriptors.version>0.1.0</ets.assembly.descriptors.version>
     </properties>
 
 

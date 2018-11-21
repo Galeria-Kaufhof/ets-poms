@@ -10,26 +10,47 @@
     <packaging>pom</packaging>
     <name>EShop Technology Stack (ETS) - Application Parent POM</name>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>net.alchim31.maven</groupId>
-                <artifactId>scala-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.scalatest</groupId>
-                <artifactId>scalatest-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+    <profiles>
+        <!-- src/main -->
+        <profile>
+            <id>ets-application-main</id>
+            <activation>
+                <file>
+                    <exists>src/main</exists>
+                </file>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-assembly-plugin</artifactId>
+                        <dependencies>
+                            <dependency>
+                                <groupId>de.kaufhof.ets</groupId>
+                                <artifactId>ets-assembly-descriptors-application</artifactId>
+                                <version>${ets.assembly.descriptors.version}</version>
+                            </dependency>
+                        </dependencies>
+                        <configuration>
+                            <descriptorRefs>
+                                <descriptorRef>ets-assembly-descriptors-application</descriptorRef>
+                            </descriptorRefs>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>package-assembly</id>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>single</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.scalatest</groupId>
-            <artifactId>scalatest_${ets.scala.compat.version}</artifactId>
-        </dependency>
-    </dependencies>
-
+    </profiles>
 
     <!-- We need a SCM declaration in each file because of
         https://issues.apache.org/jira/browse/MNG-3244
