@@ -389,6 +389,8 @@
                     <configuration>
                         <scalaVersion>${ets.scala.version}</scalaVersion>
                         <scalaCompatVersion>${ets.scala.compat.version}</scalaCompatVersion>
+                        <source>${ets.java.version}</source>
+                        <target>${ets.java.version}</target>
                         <args>
                             <arg>-feature</arg>
                             <arg>-deprecation</arg>
