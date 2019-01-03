@@ -20,6 +20,22 @@
                 </file>
             </activation>
             <build>
+                <resources>
+                    <resource>
+                        <directory>src/main/resources</directory>
+                    </resource>
+                    <!--
+                    Directory for local development configurations.
+                    Can (and should) be excluded when creating the application production assembly
+
+                    The goal is that a developer can checkout the project, import it in it's IDE and
+                    then start it - without doing any further configuration. Therefore, configuration
+                    files with useful dev local defaults should be checked in to the repository.
+                    -->
+                    <resource>
+                        <directory>src/main/dev-resources</directory>
+                    </resource>
+                </resources>
                 <plugins>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
