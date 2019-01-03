@@ -3,7 +3,7 @@
     <parent>
         <groupId>de.kaufhof.ets</groupId>
         <artifactId>ets-poms-aggregator-parent</artifactId>
-        <version>0.6.0</version>
+        <version>0.7.0-SNAPSHOT</version>
         <relativePath>ets-poms-aggregator-parent/</relativePath>
     </parent>
 
@@ -12,7 +12,7 @@
     <packaging>pom</packaging>
     <!-- we need the version here even if we inherit it because this is the aggregator pom.
          - otherwise release plugin will explode -->
-    <version>0.6.0</version>
+    <version>0.7.0-SNAPSHOT</version>
 
     <description>
         Aggregator POM only, used for releasing and comfortable building.
