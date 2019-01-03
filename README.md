@@ -6,6 +6,11 @@
 This project contains all POMs defining a ETS release.
 
 ## Changelog
+
+### 0.6.0
+- Add `src/main/dev-resources` as resources directory for all ets-applications
+### 0.5.0
+- Force scala compiler to use the `ets.java.version`
 ### 0.4.0
 - Add Maven assembly descriptor for application
 - Activate plugins and add dependencies depending on profiles
